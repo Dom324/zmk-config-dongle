@@ -52,30 +52,30 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp Q       &kp W       &kp F          &kp P         &kp B        &kp J    &kp L        &kp U        &kp Y       &kp SEMICOLON
-              &hm LGUI A  &hm LALT R  &hm LCTRL S    &hm LSHIFT T  &kp G        &kp M    &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
-&kp FSLH      &kp Z       &kp X       &kp C          &kp D         &kp V        &kp K    &kp H        &kp COMMA    &kp DOT     &kp COLON        &kp BSLH
-                                      &mt LCTRL DEL  &lt Nav TAB   &kp SPACE    &kp ESCAPE &lt Sym RET  &kp BSPC
+              &kp Q         &kp W           &kp F           &kp P           &kp B               &kp J       &kp L           &kp U           &kp Y           &kp SEMICOLON
+              &hm LGUI A    &hm LALT R      &hm LCTRL S     &hm LSHIFT T    &kp G               &kp M       &hm RSHFT N     &hm RCTRL E     &hm RALT I      &hm RGUI O
+&kp FSLH      &kp Z         &kp X           &kp C           &kp D           &kp V               &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp BSLH
+                                            &kp DEL         &lt Nav SPACE   &kp TAB             &kp ESCAPE  &lt Sym RET     &kp BSPC
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE       &trans     &kp UP_ARROW  &trans     &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp AT     &kp HASH      &kp GRAVE  &kp LBKT    &kp RBKT  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &trans        &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                         &trans        &trans     &trans      &trans    &trans        &kp DOT
+              &kp TILDE     &trans          &kp UP_ARROW    &trans          &kp LBRC            &kp RBRC    &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
+              &hm LGUI R    &hm LALT G      &hm LCTRL U     &hm LSHIFT H    &kp LBKT            &kp RBKT    &hm LSHIFT LEFT &hm LCTRL DOWN  &hm LALT UP     &hm LGUI RIGHT
+&kp LEFT_ALT  &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp RPAR    &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp KP_MULTIPLY &kp PLUS
+                                            &trans          &lt Nav H       &trans              &trans      &lt Sym G       &kp DOT
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-            &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
-            &kp SQT     &kp LBKT    &kp LBRC    &kp LPAR    &kp LT              &kp GT      &kp RPAR    &kp RBRC    &kp RBKT    &kp DQT
-&kp DOLLAR  &kp UNDER   &kp MINUS   &kp KP_ASTERISK &kp PLUS &kp PERCENT        &kp CARET   &kp EQUAL   &kp AMPERSAND &kp PIPE  &kp EXCL &kp TILDE
-                                    &kp LCTRL   &kp AT      &to Sym             &to Base    &kp HASH    &trans
+            &kp N1          &kp N2          &kp N3          &kp N4          &kp N5              &kp N6      &kp N7          &kp N8          &kp N9          &kp N0
+            &hm LGUI SQT    &hm LALT LBKT   &hm LCTRL LBRC  &hm LSHIFT LPAR &kp LT              &kp GT      &hm LSHIFT RPAR &hm LCTRL RBRC  &hm LALT RBKT   &hm LGUI DQT
+&kp DOLLAR  &kp UNDER       &kp MINUS       &kp KP_ASTERISK &kp PLUS        &kp PERCENT         &kp CARET   &kp EQUAL       &kp AMPERSAND   &kp PIPE        &kp EXCL        &kp TILDE
+                                            &kp LCTRL       &lt Nav AT      &to Sym             &to Base    &lt Sym HASH    &trans
             >;
         };
     };
