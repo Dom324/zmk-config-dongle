@@ -65,7 +65,7 @@
               &kp TILDE     &trans          &kp UP_ARROW    &trans          &kp LBRC            &kp RBRC    &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
               &hm LGUI R    &hm LALT G      &hm LCTRL U     &hm LSHIFT H    &kp LBKT            &kp RBKT    &hm LSHIFT LEFT &hm LCTRL DOWN  &hm LALT UP     &hm LGUI RIGHT
 &kp LEFT_ALT  &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp RPAR    &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp KP_MULTIPLY &kp PLUS
-                                            &trans          &lt Nav H       &trans              &trans      &lt Sym G       &kp DOT
+                                            &trans          &lt Nav H       &trans              &to Base    &lt Sym G       &kp DOT
             >;
         };
 
