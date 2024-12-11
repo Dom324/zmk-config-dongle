@@ -33,19 +33,6 @@
 #define Nav         1
 #define Sym         2
 
-&mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-};
-
-&lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-};
-
 / {
     behaviors {
         hml: homerow_mods_left {
