@@ -11,6 +11,8 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include "zmk-helpers/key-labels/totem.h"
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 /*                                      38 KEY MATRIX / LAYOUT MAPPING
 
@@ -115,8 +117,8 @@
             display-name = "Settings";
             bindings = <
               &kp F1        &kp F2          &kp F3          &kp F4          &kp F5              &kp F6      &kp F7          &kp F8          &kp F9          &kp F10
-              &trans        &trans          &kp PRINTSCREEN &trans          &kp C_VOL_UP        &kp C_BRI_UP &trans         &trans          &trans          &trans
-&trans        &trans        &trans          &trans          &trans          &kp C_VOL_DN        &kp C_BRI_DN &trans         &trans          &trans          &trans          &trans
+              &out OUT_USB  &out OUT_BLE    &kp PRINTSCREEN &trans          &kp C_VOL_UP        &kp C_BRI_UP &trans         &bootloader     &sys_reset      &trans
+&trans        &bt BT_CLR    &bt BT_NXT      &bt BT_PRV      &trans          &kp C_VOL_DN        &kp C_BRI_DN &trans         &trans          &trans          &trans          &trans
                                             &sl Sym         &lt Nav RET     &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
