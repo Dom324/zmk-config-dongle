@@ -83,9 +83,9 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE     &trans          &kp UP_ARROW    &trans          &kp LBRC            &kp NUMBER_6 &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
+              &kp TILDE     &trans          &kp UP_ARROW    &trans          &kp LBRC            &kp KP_N6    &kp KP_N7      &kp KP_N8       &kp KP_N9       &kp KP_N0
               &hml LGUI R   &hml LALT G     &hml LCTRL U    &hml LSHIFT H   &kp LBKT            &trans       &kp LEFT       &kp DOWN        &kp UP          &kp RIGHT
-&kp LEFT_ALT  &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp NUMBER_1 &kp NUMBER_2   &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5    &to Game
+&kp LEFT_ALT  &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp KP_N1    &kp KP_N2      &kp KP_N3       &kp KP_N4       &kp KP_N5       &to Game
                                             &sl Sym         &lt Nav RET     &sk LSHIFT          &to Base     &kp SPACE      &kp BSPC
             >;
         };
