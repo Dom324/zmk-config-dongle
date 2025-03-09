@@ -100,9 +100,9 @@
         Sym {
             display-name = "Sym";
             bindings = <
-            &kp N1          &kp GRAVE       &kp AT          &kp DOLLAR      &kp QMARK           &kp EXCL    &kp PERCENT     &kp HASH        &kp TILDE       &kp N0
-            &hml LGUI SQT   &hml LALT LBKT  &hml LCTRL LBRC &hml LSHIFT LPAR &kp LT             &kp GT      &hmr LSHIFT RPAR &hmr LCTRL RBRC &hmr LALT RBKT &hmr LGUI DQT
-&kp TAB     &kp UNDER       &kp MINUS       &kp KP_ASTERISK &kp PLUS        &trans              &trans      &kp EQUAL       &kp AMPERSAND   &kp PIPE        &kp CARET       &kp BSLH
+            &trans          &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &trans
+            &kp PERCENT     &kp PIPE        &kp HASH        &kp QMARK       &kp LBRC            &kp RBRC    &kp SQT         &kp MINUS       &kp KP_ASTERISK &kp EQUAL
+&kp TAB     &trans          &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &trans          &kp BSLH
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
