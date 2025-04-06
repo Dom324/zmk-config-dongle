@@ -82,7 +82,7 @@
             bindings = <
               &kp Q         &kp W           &kp F           &kp P           &kp B               &kp J       &kp L           &kp U           &kp Y           &kp SEMICOLON
               &hml LGUI A   &hml LALT R     &hml LCTRL S    &hml LSHIFT T   &kp G               &kp M       &hmr RSHFT N    &hmr RCTRL E    &hmr RALT I     &hmr RGUI O
-&kp RET       &kp Z         &kp X           &kp C           &kp D           &kp V               &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp FSLH
+&kp TAB       &kp Z         &kp X           &kp C           &kp D           &kp V               &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp RET
                                             &sl Sym         &sl Nav         &sk LSHIFT          &kp ESCAPE  &kp SPACE       &kp BSPC
             >;
         };
@@ -92,7 +92,7 @@
             bindings = <
               &kp TILDE     &trans          &kp UP_ARROW    &trans          &kp LBRC            &kp N6      &kp N7          &kp N8          &kp N9          &kp N0
               &hml LGUI R   &hml LALT G     &hml LCTRL U    &hml LSHIFT H   &kp LBKT            &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
-&kp RET       &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp N1      &kp N2          &kp N3          &kp N4          &kp N5          &to Game
+&kp TAB       &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp N1      &kp N2          &kp N3          &kp N4          &kp N5          &to RET
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
@@ -100,9 +100,9 @@
         Sym {
             display-name = "Sym";
             bindings = <
-              &trans        &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &trans
+              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &trans
               &kp PERCENT   &kp PIPE        &kp HASH        &kp QMARK       &kp LBRC            &kp RBRC    &kp SQT         &kp MINUS       &kp KP_ASTERISK &kp EQUAL
-&kp TAB       &trans        &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &trans          &kp BSLH
+&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &trans          &kp RET
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
