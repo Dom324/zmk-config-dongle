@@ -30,6 +30,13 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/dead-keys.h>
+
+/* ´ (Acute Accent Dead Key) */
+#define EN_ACUTE &dk DK_ACUT
+
+/* ˇ (Caron Accent Dead Key) */
+#define EN_CARON &dk DK_CARN
 
 #define Base        0
 #define Nav         1
@@ -37,8 +44,6 @@
 #define Game        3
 #define Settings    4
 /* #define Accents    4 */
-
-#include "keys_cs.h"
 
 &sk {
     quick-release;
@@ -103,9 +108,9 @@
         Sym {
             display-name = "Sym";
             bindings = <
-              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &kp CS_CARON
+              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &kp EN_CARON
               &kp PERCENT   &kp PIPE        &kp HASH        &kp QMARK       &kp LBRC            &kp RBRC    &kp SQT         &kp MINUS       &kp KP_ASTERISK &kp EQUAL
-&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &kp CS_ACUTE          &kp RET
+&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &kp EN_ACUTE          &kp RET
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
