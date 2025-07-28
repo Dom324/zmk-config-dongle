@@ -36,6 +36,9 @@
 #define Sym         2
 #define Game        3
 #define Settings    4
+/* #define Accents    4 */
+
+#include "keys_cs.h"
 
 &sk {
     quick-release;
@@ -100,9 +103,9 @@
         Sym {
             display-name = "Sym";
             bindings = <
-              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &trans
+              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &kp CS_CARON
               &kp PERCENT   &kp PIPE        &kp HASH        &kp QMARK       &kp LBRC            &kp RBRC    &kp SQT         &kp MINUS       &kp KP_ASTERISK &kp EQUAL
-&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &trans          &kp RET
+&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &kp CS_ACUTE          &kp RET
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
@@ -126,5 +129,17 @@
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
+/**/
+/*         Accents { */
+/*             display-name = "Base"; */
+/*             bindings = < */
+/*               &kp Q         &kp W           &kp F           &kp P           &kp B               &kp J       &kp L           &kp U           &kp Y           &kp SEMICOLON */
+/*               &kp A         &kp R           &kp S           &kp T           &kp G               &kp M       &kp N           &kp E           &kp I           &kp O */
+/* &kp TAB       &kp Z         &kp X           &kp C           &kp D           &kp V               &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp RET */
+/*                                             &sl Sym         &sl Nav         &sk LSHIFT          &kp ESCAPE  &kp SPACE       &kp BSPC */
+/*             >; */
+/*         }; */
+/**/
+/**/
     };
 };
