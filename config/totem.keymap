@@ -100,9 +100,9 @@
         Sym {
             display-name = "Sym";
             bindings = <
-              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &trans
+              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &to Settings
               &kp PERCENT   &kp PIPE        &kp HASH        &kp QMARK       &kp LBRC            &kp RBRC    &kp SQT         &kp MINUS       &kp KP_ASTERISK &kp EQUAL
-&studio_unlock &kp BSLH     &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &trans          &kp RET
+&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &to Game        &kp RET
                                             &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
             >;
         };
@@ -113,17 +113,17 @@
               &kp Q         &kp F           &kp UP          &kp E           &kp B               &kp J       &kp L           &kp U           &kp Y           &kp SEMICOLON
               &kp R         &kp LEFT        &kp DOWN        &kp RIGHT       &kp G               &kp M       &hmr RSHFT N    &hmr RCTRL E    &hmr RALT I     &hmr RGUI O
 &to Base      &hml LGUI R   &hml LALT G     &hml LCTRL U    &hml LSHIFT H   &hmr RGUI O         &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp FSLH
-                                            &sl Sym         &kp SPACE       &sk ESCAPE          &kp ESCAPE  &kp SPACE       &kp BSPC
+                                            &sl Sym         &kp SPACE       &sk ESCAPE          &to Base    &kp SPACE       &kp BSPC
             >;
         };
 
         Settings {
             display-name = "Settings";
             bindings = <
-              &kp F1        &kp F2          &kp F3          &kp F4          &kp F5              &kp F6      &kp F7          &kp F8          &kp F9          &kp F10
-              &out OUT_USB  &out OUT_BLE    &kp PRINTSCREEN &trans          &kp C_VOL_UP        &kp C_BRI_UP &trans         &bootloader     &sys_reset      &trans
+              &kp F1        &kp F2          &kp F3          &kp F4          &kp F5              &kp F6       &kp F7          &kp F8          &kp F9          &kp F10
+              &out OUT_USB  &out OUT_BLE    &kp PRINTSCREEN &studio_unlock  &kp C_VOL_UP        &kp C_BRI_UP &trans         &bootloader     &sys_reset      &trans
 &trans        &bt BT_CLR    &bt BT_NXT      &bt BT_PRV      &trans          &kp C_VOL_DN        &kp C_BRI_DN &trans         &trans          &trans          &trans          &trans
-                                            &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
+                                            &sl Sym         &sl Nav         &sk LSHIFT          &to Base     &kp SPACE       &kp BSPC
             >;
         };
     };
