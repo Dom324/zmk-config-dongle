@@ -72,7 +72,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp BSPC>;
+        };
+        combo_gui {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp LGUI>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -80,10 +92,10 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp Q         &kp W           &kp F           &kp P           &kp B               &kp J       &kp L           &kp U           &kp Y           &kp SEMICOLON
-              &hml LGUI A   &hml LALT R     &hml LCTRL S    &hml LSHIFT T   &kp G               &kp M       &hmr RSHFT N    &hmr RCTRL E    &hmr RALT I     &hmr RGUI O
-&kp TAB       &kp Z         &kp X           &kp C           &kp D           &kp V               &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp RET
-                                            &sl Sym         &sl Nav         &sk LSHIFT          &kp ESCAPE  &kp SPACE       &kp BSPC
+              &kp W         &kp L           &kp Y           &kp P           &kp B               &kp Z       &kp F           &kp O           &kp U           &kp FSLH
+              &kp C         &kp R           &kp S           &kp T           &kp G               &kp M       &kp N           &kp E           &kp I           &A
+&kp TAB       &kp Q         &kp J           &kp V           &kp D           &kp K               &kp X       &kp H           &kp GT          &kp COMMA       &kp SEMICOLON   &kp RET
+                                            &sl Sym         &sl Nav         &sk ESCAPE          &kp LSHIFT  &kp SPACE       &sk LCTRL
             >;
         };
 
@@ -93,17 +105,17 @@
               &kp TILDE     &trans          &kp UP_ARROW    &trans          &kp LBRC            &kp N6      &kp N7          &kp N8          &kp N9          &kp N0
               &hml LGUI R   &hml LALT G     &hml LCTRL U    &hml LSHIFT H   &kp LBKT            &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
 &kp TAB       &kp LEFT_WIN  &kp MINUS       &trans          &kp PLUS        &kp LPAR            &kp N1      &kp N2          &kp N3          &kp N4          &kp N5          &to RET
-                                            &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
+                                            &sl Sym         &sl Nav         &sk ESCAPE          &to Base    &kp SPACE       &sk LCTRL
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-              &kp FSLH      &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &to Settings
+              &kp GRAVE     &kp AMPERSAND   &kp AT          &kp LT          &kp LPAR            &kp RPAR    &kp GT          &kp UNDER       &kp TILDE       &kp BSLH
               &kp PERCENT   &kp PIPE        &kp HASH        &kp QMARK       &kp LBRC            &kp RBRC    &kp SQT         &kp MINUS       &kp KP_ASTERISK &kp EQUAL
-&kp TAB       &kp BSLH      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp PLUS        &kp GRAVE       &to Game        &kp RET
-                                            &sl Sym         &sl Nav         &sk LSHIFT          &to Base    &kp SPACE       &kp BSPC
+&kp TAB       &kp PLUS      &kp CARET       &kp DOLLAR      &kp EXCL        &kp LBKT            &kp RBKT    &kp DQT         &kp LT          &kp DOT         &kp COLON        &kp RET
+                                            &sl Sym         &sl Nav         &sk ESCAPE          &to Base    &kp SPACE       &sk LCTRL
             >;
         };
 
