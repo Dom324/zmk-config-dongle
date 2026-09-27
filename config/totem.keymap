@@ -110,10 +110,10 @@
         Game {
             display-name = "Game";
             bindings = <
-              &kp Q         &kp F           &kp UP          &kp E           &kp B               &kp J       &kp L           &kp U           &kp Y           &kp SEMICOLON
-              &kp R         &kp LEFT        &kp DOWN        &kp RIGHT       &kp G               &kp M       &hmr RSHFT N    &hmr RCTRL E    &hmr RALT I     &hmr RGUI O
-&to Base      &hml LGUI R   &hml LALT G     &hml LCTRL U    &hml LSHIFT H   &hmr RGUI O         &kp K       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp FSLH
-                                            &sl Sym         &kp SPACE       &sk ESCAPE          &to Base    &kp SPACE       &kp BSPC
+              &kp N1        &kp N2          &kp N3          &kp N4          &kp N5              &kp N6      &kp N7          &kp N8          &kp N9          &kp N0
+              &kp LALT      &kp Q           &kp UP          &kp E           &kp H               &kp C       &kp X           &kp V           &hmr RALT I     &hmr RGUI O
+&to Base      &kp LCTRL     &kp LEFT        &kp DOWN        &kp RIGHT       &kp V               &kp F       &kp H           &kp COMMA       &kp DOT         &kp COLON       &kp FSLH
+                                            &kp LSHIFT      &kp SPACE       &sk ESCAPE          &kp RET     &kp SPACE       &kp BSPC
             >;
         };
 
